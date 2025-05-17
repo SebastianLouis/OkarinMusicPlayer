@@ -1,0 +1,521 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+body{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: rgb(0, 0, 0);
+}
+
+/*********************
+* Contener Principal *
+*********************/
+.contenedor1 {
+  background-color: aquamarine;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header {
+  background-color: rgb(34, 30, 30);
+  display: flex;
+  justify-content: space-between;
+}
+
+/*******
+* logo *
+*******/
+
+.c-logo {
+  background-color: rgb(231, 115, 38);
+}
+.logo {
+  position: absolute;
+  width: 100px;
+  left: 35px;
+  top: 10px;
+}
+
+.logo span{
+  color: orange;
+}
+
+/*********************
+* nombre de la marca *
+*********************/
+.nombre, .nombre1{
+  color: white;
+  position: absolute;
+  left: 150px;
+  top: 25px;
+  font-size: 45px;
+  font-weight: 600;
+}
+.nombre1{
+  visibility: hidden;
+}
+
+.nombre span, .nombre1 span{
+  color: rgb(231, 115, 38);
+  font-weight: 600;
+}
+
+/***********
+* buscador *
+***********/
+.buscador {
+  background-color: rgb(34, 30, 30);
+  justify-items: center;
+  padding-left: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.barra-buscador {
+  width: 600px;
+}
+input {
+  outline: none;
+  box-sizing: border-box;
+  height: 30px;
+  padding: 0 22px;
+  color: black;
+  border-radius: 50px;
+  border: 3px solid rgb(56, 54, 53);
+  background-color: rgb(56, 54, 53);
+}
+::placeholder{
+  color: gray;
+}
+i{
+  color: rgb(231, 115, 38);
+  cursor: pointer;
+}
+
+
+/*************
+* navegacion *
+*************/
+.navegacion {
+  background-color: rgb(43, 38, 35);
+  justify-items: center;
+}
+
+.lista-navegacion li {
+  display: inline-block;
+  list-style-type: none;
+}
+li a {
+  display: block;
+  color: rgb(231, 115, 38);
+  text-align: center;
+  padding: 8px 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+li a:hover {
+  background-color: rgb(58, 51, 46);
+}
+
+/***************************
+* Encabezados de contenido *
+***************************/
+.titulos{
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+}
+
+/*********************
+* contenedor2 grande *
+*********************/
+.contenedor2 {
+  background-color: rgb(24, 21, 19);
+  padding-bottom: 0px;
+}
+#pag1 {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: stretch;
+}
+
+/****************
+* Barra Lateral *
+*****************/
+.barra-lateral {
+  background-color: rgb(34, 30, 30);
+  max-width: 14%;
+  width: 14%;
+  height: 590px;
+  z-index: 100;
+  color: rgb(175, 167, 159);
+  padding-top: 11px;
+  padding-left: 11px;
+  margin: 0.5%;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.lateralPlaylist{
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: underline;
+  color: rgb(255, 129, 11);
+}
+
+.barra-lateral p{
+  color: rgb(255, 129, 11);
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+}
+
+/************** 
+* Barra pegada *
+**************/
+.barra-pegada {
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  background-color: rgb(34, 30, 30);
+  max-width: 13%;
+  width: 13%;
+  height: 777px;
+  z-index: 100;
+  color: rgb(163, 111, 32);
+  padding-top: 11px;
+  padding-left: 11px;
+  margin: 0.5%;
+  border-radius: 5px;
+}
+
+/*******************************************
+* Función de ocultar para adaptar pantalla *
+*******************************************/
+
+@media (max-width: 768px) {
+  .barra-lateral {
+    display: none;
+  }
+  .barra-pegada{
+    visibility: hidden;
+  }
+  .barra-buscador{
+  width: 30vh;
+}
+  .footer{
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 1600px){
+    .nombre{
+    visibility: hidden;
+  }
+    .nombre1{
+    visibility: visible;
+  }
+}
+
+@media (max-width: 1225px){
+  .nombre1{
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 1350px){
+.barra-buscador{
+  width: 50vh;
+}
+}
+
+/***********************
+* Contenedor de iframe *
+***********************/
+
+.contenido {
+  background-color: rgb(34, 30, 30);
+  width: 100%;
+  height: 782px;
+  margin-top: 10px;
+  margin-right: 3px;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+/****************
+* index iframe *
+***************/
+
+.contenidoA {
+  background-color: rgb(34, 30, 30);
+  width: 100%;
+  height: 782px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+/**********
+* Banners *
+***********/
+
+.contenedor-banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner {
+    background-color: rgb(231, 115, 38);
+    border-radius: 9px;
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+    width: 300%; /* 100% para cada banner */
+}
+
+.banner-movimiento {
+    border-radius: 9px;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-movimiento img {
+    display: block;
+}
+
+/**********************
+* Imagenes en General *
+**********************/
+img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/***********************
+* Cajas de interacción *
+***********************/
+.canciones {
+  background-color: rgb(24, 21, 19);
+  display: flex;
+  border-radius: 8px;
+}
+.c1 {
+  position: relative;
+  background-color: rgb(24, 21, 19);
+  margin: 2%;
+}
+
+.artistas {
+  background-color: rgb(24, 22, 20);
+  display: flex;
+  border-radius: 8px;
+}
+.a1 {
+  margin: 2%;
+  color: white;
+}
+
+.generos {
+  background-color: rgb(24, 21, 19);
+  display: flex;
+  border-radius: 8px;
+}
+.g1 {
+  background-color: rgb(24, 21, 19);
+  margin: 2%;
+}
+
+/*******************************************
+** Estilos para las tarjetas tipo Spotify **
+********************************************/
+.img {
+    width: 190px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.img img {
+    width: 100%;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 16px 32px rgba(179, 111, 35, 0.5);
+}
+
+.a1 .img{
+  border-radius: 100px;
+}
+.a1 .img img {
+  border-radius: 100px;
+  width: 100%;
+  box-shadow: 100px rgb(0, 0, 0, 0.3);
+}
+
+.a1 .img:hover {
+  border-radius: 100px;
+  box-shadow: 100px rgb(163, 111, 32, 0.5);
+}
+
+
+.img a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.8));
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: background 0.3s ease;
+}
+
+.img:hover a {
+    background: linear-gradient(180deg, transparent, rgb(0, 0, 0));
+}
+
+/********************************
+* Texto dentro de las tarjetas *
+********************************/
+.c1 a, .a1 a, .g1 a {
+    display: block;
+    padding-left: 1px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0 0 20px 20px;
+    transition: background 0.3s ease;
+}
+
+
+/*******************************
+* Caja de Boton y Boton oculto *
+*******************************/
+.play {
+  background-color: gold;
+  display: flex;
+}
+.boton-play {
+  position: absolute;
+  color: black;
+  top: 140px;
+  left: 130px;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  background-color: rgb(204, 111, 50);
+}
+
+/***************************
+* Barra de scroll en cajas *
+***************************/
+.canciones,
+.artistas,
+.generos {
+  justify-content: left;
+  overflow-x: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 16px; /* anchura de la barra de scroll */
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(34, 30, 30); /* color del fondo de la barra de scroll */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(43, 38, 35); /* color de la barra de scroll */
+  border-radius: 20px; /* radio de la barra de scroll */
+  border: 1px solid rgb(231, 115, 38); /* borde de la barra de scroll */
+}
+
+/*********************************************************
+* Barra de scroll horizontal dentro de cajas de imagenes *
+*********************************************************/
+.canciones::-webkit-scrollbar {
+  height: 10px;
+}
+.artistas::-webkit-scrollbar {
+  height: 10px;
+}
+.generos::-webkit-scrollbar {
+  height: 10px;
+}
+
+/********************
+* Listas en general *
+********************/
+ul{
+  list-style-type: none;
+}
+
+/*********************
+* botones en general *
+*********************/
+
+button {
+  border-radius: 4px;
+  background-color: rgb(255, 115, 0);
+  color: rgb(247, 247, 247);
+  padding: 0 3px;
+  cursor: pointer;
+}
+
+
+/**********
+* Footer *
+**********/
+.footer{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(34, 30, 30);
+  max-width: 12.1%;
+  width: 12.1%;
+  height: 140px;
+  z-index: 100;
+  color: rgb(175, 167, 159);
+  padding-top: 11px;
+  padding-left: 11px;
+  margin: 0.5%;
+  border-radius: 8px;
+  align-content: center;
+}
+
+.footer p{
+  font-size: 20px;
+  padding: 10px 10px 30px;
+}
+
+#icnsImg{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#icnsImg img{
+  width: 26px;
+  height: 26px;
+}

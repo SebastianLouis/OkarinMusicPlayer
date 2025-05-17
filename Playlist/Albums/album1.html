@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La nube en el jardin</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../playlist.css" />
+  </head>
+
+  <body>
+    <div id="playlistGeneral">
+      <div id="playlistLeft">
+        <div class="playlist-container">
+          <h1>🎶 La nube en el jardin 🎶</h1>
+          <ul class="playlist">
+            <li id="listDesc">
+              <span>Título</span>
+              <span>Artista</span>
+              <span>Duración</span>
+            </li>
+            <div id="listScroll">
+            <li
+              onclick="reproducirCancion('../../canciones/Ed Maverick - La nube en el jardin/1-ValorDeMás-EdMaverick.mp3', 'Ed Maverick - Valor de más')"
+            >
+              <span>▶</span>
+              <span class="titulo">Valor de más</span>
+              <span class="artista">Ed Maverick</span>
+              <span class="duracion">4:13</span>
+            </li>
+            <li
+              onclick="reproducirCancion('../../canciones/Ed Maverick - La nube en el jardin/2-NubeGris-EdMaverick.mp3', 'Ed Maverick - Nube gris')"
+            >
+              <span>▶</span>
+              <span class="titulo">Nube gris</span>
+              <span class="artista">Ed Maverick</span>
+              <span class="duracion">3:00</span>
+            </li>
+            <li
+              onclick="reproducirCancion('../../canciones/Ed Maverick - La nube en el jardin/3-Culpa-EdMaverick.mp3', 'Ed Maverick - Culpa')"
+            >
+              <span>▶</span>
+              <span class="titulo">Culpa</span>
+              <span class="artista">Ed Maverick</span>
+              <span class="duracion">3:59</span>
+            </li>
+            <li
+              onclick="reproducirCancion('../../canciones/Ed Maverick - La nube en el jardin/4-Violento-EdMaverick.mp3', 'Ed Maverick - Violento')"
+            >
+              <span>▶</span>
+              <span class="titulo">Violento</span>
+              <span class="artista">Ed Maverick</span>
+              <span class="duracion">4:45</span>
+            </li>
+            <li
+              onclick="reproducirCancion('../../canciones/Ed Maverick - La nube en el jardin/5-Vuelve Corazón-EdMaverick.mp3', 'Ed Maverick - Vuelve corazón')"
+            >
+              <span>▶</span>
+              <span class="titulo">Vuelve corazón</span>
+              <span class="artista">Ed Maverick</span>
+              <span class="duracion">4:14</span>
+            </li>
+            <li
+              onclick="reproducirCancion('../../canciones/Ed Maverick - La nube en el jardin/6-C-Ed Maverick.mp3', 'Ed Maverick - C')"
+            >
+              <span>▶</span>
+              <span class="titulo">C</span>
+              <span class="artista">Ed Maverick</span>
+              <span class="duracion">4:13</span>
+            </li>
+            <li
+              onclick="reproducirCancion('../../canciones/Ed Maverick - La nube en el jardin/7-Arcoiris-EdMaverick.mp3', 'Ed Maverick - Arcoiris')"
+            >
+              <span>▶</span>
+              <span class="titulo">Arcoiris</span>
+              <span class="artista">Ed Maverick</span>
+              <span class="duracion">5:02</span>
+            </li>
+            <li
+              onclick="reproducirCancion('../../canciones/Ed Maverick - La nube en el jardin/8-NoHayProblema-EdMaverick.mp3', 'Ed Maverick - No hay problema')"
+            >
+              <span>▶</span>
+              <span class="titulo">No hay problema</span>
+              <span class="artista">Ed Maverick</span>
+              <span class="duracion">5:13</span>
+            </li>
+            <li
+              onclick="reproducirCancion('../../canciones/Ed Maverick - La nube en el jardin/9-NadieVaAPensarEnTiMejorQueYo-EdMaverick.mp3', 'Nadie va a pensar en ti mejor que yo')"
+            >
+              <span>▶</span>
+              <span class="titulo">Nadie va a pensar en ti mejor que yo</span>
+              <span class="artista">Ed Maverick</span>
+              <span class="duracion">5:47</span>
+            </li>
+            <li
+              onclick="reproducirCancion('../../canciones/Ed Maverick - La nube en el jardin/10-Loop-Ed Maverick.mp3', 'Ed Maverick - Loop')"
+            >
+              <span>▶</span>
+              <span class="titulo">Loop</span>
+              <span class="artista">Ed Maverick</span>
+              <span class="duracion">3:33</span>
+            </li>
+            <li
+              onclick="reproducirCancion('../../canciones/Ed Maverick - La nube en el jardin/11-Tiempo-EdMaverick.mp3', 'Ed Maverick - Tiempo')"
+            >
+              <span>▶</span>
+              <span class="titulo">Tiempo</span>
+              <span class="artista">Ed Maverick</span>
+              <span class="duracion">4:06</span>
+            </li>
+          </div>
+          </ul>
+        </div>
+
+        <div class="reproductor">
+          <p id="cancionActual">Selecciona una canción</p>
+          <audio id="audio" controls></audio>
+        </div>
+      </div>
+      <div id="playlistRight">
+        <div id="artistaImg" style="text-align: center;">
+          <img src="../../imagenes/artistas/a3.jpg">
+        </div>
+        <div id="artistaDesc">
+          <br>
+          <br>
+          <div id="name">Ed Maverick</div>
+          <br>
+          <br>
+          <div id="Desc">Eduardo Hernández Saucedo, conocido como Ed Maverick es un cantautor, productor y músico multinstrumentista mexicano. Se especializa en los géneros de música folk, alterlatino y rock latino.</div>
+        </div>
+      </div>
+    </div>
+    <script src="../playlist.js"></script>
+  </body>
+</html>

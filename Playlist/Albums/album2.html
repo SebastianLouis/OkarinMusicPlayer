@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smithreens</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../playlist.css" />
+  </head>
+
+  <body>
+    <div id="playlistGeneral">
+      <div id="playlistLeft">
+        <div class="playlist-container">
+          <h1>🎶 Smithereens 🎶</h1>
+          <ul class="playlist">
+            <li id="listDesc">
+              <span>Título</span>
+              <span>Artista</span>
+              <span>Duración</span>
+            </li>
+            <div id="listScroll">
+            <li
+              onclick="reproducirCancion('../../canciones/Joji - Smithreens/1-Joji-DieForYou.mp3', 'Joji - Die for you')"
+            >
+              <span>▶</span>
+              <span class="titulo">Die for you</span>
+              <span class="artista">Joji</span>
+              <span class="duracion">3:31</span>
+            </li>
+            <li
+              onclick="reproducirCancion('../../canciones/Joji - Smithreens/2-Joji-GlimpseofUs.mp3', 'Joji - Glimpse of us')"
+            >
+              <span>▶</span>
+              <span class="titulo">Glimpse of us</span>
+              <span class="artista">Joji</span>
+              <span class="duracion">3:54</span>
+            </li>
+            <li
+              onclick="reproducirCancion('../../canciones/Joji - Smithreens/3-Joji-YUKON(INTERLUDE).mp3', 'Joji - YUKON(INTERLUDE)')"
+            >
+              <span>▶</span>
+              <span class="titulo">YUKON(INTERLUDE)</span>
+              <span class="artista">Joji</span>
+              <span class="duracion">3:28</span>
+            </li>
+            <li
+              onclick="reproducirCancion('../../canciones/Joji - Smithreens/4-Joji-Feeling Like The End.mp3', 'Joji - Feeling like the end')"
+            >
+              <span>▶</span>
+              <span class="titulo">Feeling like the end</span>
+              <span class="artista">Joji</span>
+              <span class="duracion">1:43</span>
+            </li>
+            <li
+              onclick="reproducirCancion('../../canciones/Joji - Smithreens/5-Joji-BeforeTheDayIsOver.mp3', 'Joji - Before the day is over')"
+            >
+              <span>▶</span>
+              <span class="titulo">Before the day is over</span>
+              <span class="artista">Joji</span>
+              <span class="duracion">3:34</span>
+            </li>
+            <li
+              onclick="reproducirCancion('../../canciones/Joji - Smithreens/6-Joji-Dissolve.mp3', 'Joji - Dissolve')"
+            >
+              <span>▶</span>
+              <span class="titulo">Dissolve</span>
+              <span class="artista">Joji</span>
+              <span class="duracion">2:58</span>
+            </li>
+            <li
+              onclick="reproducirCancion('../../canciones/Joji - Smithreens/7-Joji-NIGHTRIDER.mp3', 'Joji - NIGHTRIDER')"
+            >
+              <span>▶</span>
+              <span class="titulo">NIGHTRIDER</span>
+              <span class="artista">Joji</span>
+              <span class="duracion">2:08</span>
+            </li>
+            <li
+              onclick="reproducirCancion('../../canciones/Joji - Smithreens/8-Joji-1AMFREESTYLE.mp3', 'Joji - 1 AM FREESTYLE')"
+            >
+              <span>▶</span>
+              <span class="titulo">1 AM FREESTYLE</span>
+              <span class="artista">Joji</span>
+              <span class="duracion">1:53</span>
+            </li>
+          </div>
+          </ul>
+        </div>
+
+        <div class="reproductor">
+          <p id="cancionActual">Selecciona una canción</p>
+          <audio id="audio" controls></audio>
+        </div>
+      </div>
+      <div id="playlistRight">
+        <div id="artistaImg" style="text-align: center;">
+          <img src="../../imagenes/artistas/a5.jpg">
+        </div>
+        <div id="artistaDesc">
+          <br>
+          <br>
+          <div id="name">Joji</div>
+          <br>
+          <br>
+          <div id="Desc">George Kusunoki Miller (ジョージ・楠木・ミラー, Jōji Kusunoki Mirā , nacido el 16 de septiembre de 1993) , conocido profesionalmente como Joji y anteriormente como Filthy Frank y Pink Guy , es un cantautor, rapero, productor discográfico y ex comediante japonés-australiano.</div>
+        </div>
+      </div>
+    </div>
+    <script src="../playlist.js"></script>
+  </body>
+</html>

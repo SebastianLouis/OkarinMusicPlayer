@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Okarin's Music</title>
+    <link rel="icon" href="imagenes/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="logYreg.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  </head>
+  <body>
+    <div class="contenedor1">
+
+      <!-- Encabezado -->
+      
+      
+      <header class="header">
+        <div id="logout"> 
+        <button onclick="logout()">Cerrar Sesión</button>
+        <div id="userID"></div>
+        </div>
+        <div class="c-logo">
+          <img class="logo" src="imagenes/logo.png" alt="">
+          <div class="nombre">Okarin's<span>Music</span></div>
+          <div class="nombre1">Ok<span>Music</span></div>
+        </div>
+        <div id="log_reg">
+          
+          <button onclick="login()">Iniciar Sesión</button>
+          
+          <button onclick="register()">Registrarse</button>
+        
+        </div>
+      </header>
+      <!-- Navegación -->
+        <div class="buscador">
+          <form class="buscador-principal">
+          <input class="barra-buscador" type="search" name="q" placeholder="Buscar..." />
+            <i class="fa fa-search"></i>
+          <!--
+          <button class="boton-buscar" type="submit">Buscar</button>
+          -->
+        </form>
+        </div>
+        <nav class="navegacion">
+            <ul class="lista-navegacion">
+                <li onclick="contenidoPage()"><a>Inicio</a></li>
+                <li onclick="alert('Esta opción se encuentra en desarrollo')"><a>Radio</a></li>
+                <li onclick="alert('Esta opción se encuentra en desarrollo')"><a>Podcast</a></li>
+                <li onclick="reproductorPage()"><a>Escuchar</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="barra-pegada">
+      <ul>
+        <li>Hola</li>
+      </ul>
+    </div>
+    <div class="contenedor2">
+      <div id="pag1">
+        <div class="barra-lateral">
+          <p>Albumes</p>
+          <br>
+          <ul><li class="lateralPlaylist" onclick="album1()">La nube en el jardín</li></ul>
+            <br>
+            <ul>
+            <li>- Vuelve corazón</li>
+            <li>- No hay problema</li>
+            <li>- Arcoiris</li>
+            <li>- Nube gris</li>
+            <li>- Tiempo</li>
+            <li>- . . .</li>
+          </ul>
+          <br>
+          <ul><li class="lateralPlaylist" onclick="album2()">Smithereens</li></ul>
+            <br>
+            <ul>
+            <li>- Die for You</li>
+            <li>- Glimpse of us</li>
+            <li>- Dissolve</li>
+            <li>- Feeling like the end</li>
+            <li>- Before the day is over</li>
+            <li>- . . .</li>
+          </ul>
+          <br>
+          <ul><li class="lateralPlaylist" onclick="album3()">I hate being Bi-Polar It's Awesome</li></ul>
+            <br>
+            <ul>
+            <li>- Yikes</li>
+            <li>- All mine</li>
+            <li>- Ghost Town</li>
+            <li>- Wouldn't leave</li>
+            <li>- Violent crimes</li>
+            <li>- . . .</li>
+          </ul>
+        </div>
+        <!-- Apartado de contenido -->
+        <div id="testPage" class="contenido">
+          <iframe src="contenido.html" width="100%" height="770px" style="border: none;"></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Inicio de Sesión -->
+
+    <div id="login">
+      <div id="logcss">
+        <div id="login1">
+          <label>
+          Usuario:
+          </label>
+          <input type="text" id="usuarioLog" placeholder="Ingresar usuario"></input>
+          <label>
+          Contraseña:
+          </label>
+          <input type="password" id="passwordLog" placeholder="Ingresar contraseña"></input>
+        </div>
+        <div id="mensajeLog"></div>
+        <div id="login2">
+        <button onclick="loginPass()">Entrar</button>
+        </div>
+          <p style="text-align: center;">O</p>
+          <div id="login3">
+          <button>Google</button>
+          <button>Facebook</button>
+          <button>Apple</button>
+          </div>
+        </div>
+    </div>
+
+    <!-- Registro -->
+
+    <div id="register">
+      <div id="register1">
+        <label>
+          Usuario:
+          </label>
+        <input id="userReg" type="text" placeholder="Usuario"></input>
+        <label>
+          Contraseña:
+          </label>
+        <input id="passReg" type="password" placeholder="Contraseña"></input>
+        <label>
+          Correo electrónico:
+        </label>
+        <input id="correoReg" type="text" placeholder="nombre@dominio.com"></input>
+      </div>
+      <div id="register2">        
+          <input id="terminos" type="checkbox"><p>Aceptar<a href="#">términos y condiciones</a></p></input>          
+      </div>
+        <button id="registerSend" onclick="registerPass()">Enviar</button>
+        <div id="msgReg"></div>
+        <div style="text-align: center; margin-top: -6px;">O</div>
+        <div id="register3">
+          <button>Registrarte con Google</button>
+          <button>Registrarte con Facebook</button>
+          <button>Registrarte con Apple</button>
+        </div>
+    </div>
+
+    <!-- Efecto blur al iniciar sesión/registrarse -->
+    <div id="fondoBlur">
+    </div>
+    
+        <!-- Footer -->
+    <div class="footer">
+    <div id="icnsImg">
+      <img src="imagenes/Iconos/facebook.png">
+      <img src="imagenes/Iconos/twitter.png">
+      <img src="imagenes/Iconos/instagram.png">
+      <img src="imagenes/Iconos/tik-tok.png">
+    </div>
+      <p> 2025 &copy; Derechos<br>
+          de autor reservados</p>
+    </div> 
+
+    <button id="botonBlur" onclick="botonBlur()">X</button>
+    <script src="index.js"></script>
+  </body>
+</html>

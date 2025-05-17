@@ -1,0 +1,164 @@
+#log_reg button{
+  font-size: 16px;
+  padding: 2px;
+  margin-top: 8px;
+  margin-right: 4px;
+}
+
+#log_reg{
+  margin-right: 7px;
+}
+
+/* Inicio de sesión*/
+
+#login {
+  color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1d1d1d;
+  min-width: 200px;
+  width: 5%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-content: center;
+  text-align: center;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 20px;
+  visibility: hidden;
+  z-index: 102;
+}
+
+#login1 {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+#login p {
+  font-size: 15px;
+  margin: 2px 0;
+}
+
+#login2{
+  margin-top: 8px 0;
+}
+
+
+
+/* Cerrar sesión y UserID */
+
+#logout {
+  display: flex;
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  margin-top: 8px;
+  margin-right: 7px;
+}
+
+#logout button{
+  font-size: 16px;
+  padding: 2px;
+  margin-right: 4px;
+}
+
+#userID{
+  align-content: center;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+
+/* Registro */
+
+#register {
+  color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  background-color: #1d1d1d;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-content: center;
+  gap: 10px;
+  padding: 50px;
+  border-radius: 30px;
+  visibility: hidden;         
+  z-index: 102;
+}
+
+#register label {
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+#register1 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+#register2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#register2 p{
+    padding-left: 10px;
+}
+
+#register2 a{
+    padding-left: 4px;
+    color: rgb(86, 125, 255);
+    text-decoration: none;
+}
+
+#registerSend{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 22px;
+}
+
+#register p {
+  font-size: 15px;
+  margin: -3px 0;
+}
+
+#register3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+/* Efecto Blur de Inicio de sesión y Registro */
+
+#fondoBlur {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.719);
+  filter: blur(8px);
+  z-index: 101;
+}
+
+#botonBlur {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 102;
+  visibility: hidden;
+  font-size: 20px;
+  color: white;
+  background-color: #35353500;
+}
